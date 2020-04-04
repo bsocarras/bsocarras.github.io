@@ -26,7 +26,7 @@ if (!localStorage.getItem('name')) {
     setUserName();
 } else {
     let storedName = localStorage.getItem('name');
-    myHeading.textContent = 'An I   ntroduction to Brando for ' + storedName;
+    myHeading.textContent = 'An Introduction to Brando for ' + storedName;
 }
 
 myButton.onclick = function () {
