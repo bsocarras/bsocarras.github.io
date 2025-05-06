@@ -1,0 +1,95 @@
+:root {
+    --bg: #ffffff;
+    --text: #111111;
+    --accent: #007BFF;
+    --card-bg: #f0f0f0;
+}
+
+[data-theme="dark"] {
+    --bg: #121212;
+    --text: #f2f2f2;
+    --accent: #66aaff;
+    --card-bg: #1e1e1e;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    max-width: 420px;
+    width: 90%;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-family: 'Material Symbols Outlined';
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: var(--text);
+    padding: 0;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.description {
+    margin: 1rem 0;
+    color: var(--text);
+}
+
+.email {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.email:hover {
+    text-decoration: underline;
+}
+
+.socials a {
+    margin: 0 0.5rem;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.socials a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0.9);
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.icon-link:hover .icon {
+    transform: scale(1.15);
+    filter: brightness(1.4);
+}
